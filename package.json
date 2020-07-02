@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "commentService": "npm run dev --prefix commentservice",
+    "build": "npm install --prefix client && npm install --prefix commentService",
     "client": "npm run start --prefix client",
     "dev": "concurrently \"npm run commentService\" \"npm run client\""
   },
