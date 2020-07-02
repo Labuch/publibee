@@ -11,6 +11,12 @@ An react app in order to query The pubMed Api and a microservice to add comment 
 
 ```
 > cd PubliBee 
-> npm build 
+> cd client 
+> npm install 
+> cd .. 
+> cd commentservice
+> npm install
+> cd .. 
+> npm install 
 > npm dev 
 ```
