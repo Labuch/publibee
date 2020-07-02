@@ -18,5 +18,5 @@ An react app in order to query The pubMed Api and a microservice to add comment 
 > npm install
 > cd .. 
 > npm install 
-> npm dev 
+> npm run dev 
 ```
