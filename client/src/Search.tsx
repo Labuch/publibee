@@ -26,8 +26,8 @@ export default function Search() {
 
     //SET INITIAL STATE OF THE SEARCH PAGE
     const [searchTerm, setSearchTeam] = useState('');
-    const [articlesContent, setArticles] = useState([]);
-    const [comments, setComments] = useState([]);
+    const [articlesContent, setArticles] = useState<PubMedArticle[]>([]);
+    const [comments, setComments] = useState<IComment[]>([]);
 
     const callSearchFunction = async (e) => {
         e.preventDefault();

@@ -7,10 +7,9 @@ const CommentContainer = styled.div`
     overflow-y: scroll;
 `
 
-const CommentList: FunctionComponent<IComment[]> = (props) => {
+const CommentList: FunctionComponent<{ comments: IComment[] }> = (props) => {
 
-    const { comments } = props;
-
+    const comments: IComment[] = props.comments;
     return (
         <CommentContainer>
             {comments.map((comment: IComment) => {

@@ -21,7 +21,7 @@ display: flex;
 justify-content: space-between;
 flex-direction: row;
 `
-const ArticleDetails: FunctionComponent<{ medlineCitation: IMedlineCitation, comment: IComment[] }> = (props) => {
+const ArticleDetails: FunctionComponent<{ medlineCitation: IMedlineCitation, comments: IComment[] }> = (props) => {
 
     const medlineCitation: IMedlineCitation = props.medlineCitation;
     const comments: IComment[] = props.comments;

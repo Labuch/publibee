@@ -2,7 +2,7 @@ import React, { FunctionComponent, useState } from 'react';
 import styled from 'styled-components';
 import { fetchComments, writeComment } from '../api/CommentApi';
 
-const CommentTab: FunctionComponent = (props) => {
+const CommentTab: FunctionComponent<{ id: number }> = (props) => {
 
     const pmid = props.id
 
